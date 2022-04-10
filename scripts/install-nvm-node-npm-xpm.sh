@@ -47,7 +47,10 @@ script_folder_name="$(basename "${script_folder_path}")"
 
 # =============================================================================
 
-touch ~/.zshrc
+if [ "${SHELL}" == "/bin/zsh" ]
+then
+  touch ~/.zshrc
+fi
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
