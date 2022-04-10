@@ -50,8 +50,9 @@ script_folder_name="$(basename "${script_folder_path}")"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
 if [ "${SHELL}" == "/bin/zsh" ]
-echo
+then
 
+  echo
   echo >>.zprofile
   echo 'export NVM_DIR="$HOME/.nvm"' >>.zprofile
   echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm' >> .zprofile
