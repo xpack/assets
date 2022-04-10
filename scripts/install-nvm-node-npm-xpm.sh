@@ -70,6 +70,6 @@ echo "xpm: $(xpm --version)"
 
 echo
 
-echo "Done. Be sure you exit the current terminal and enter a new one."
+echo "Done. Be sure to exit the current terminal and enter a new one."
 
 # -----------------------------------------------------------------------------
