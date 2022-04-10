@@ -47,6 +47,14 @@ script_folder_name="$(basename "${script_folder_path}")"
 
 # =============================================================================
 
+if [ "$(uname)" == "Darwin" ]
+then
+  if [ ! -d "/Library/Developer/CommandLineTools/" ]
+  then
+    xcode-select --install
+  fi
+fi
+
 if [ "${SHELL}" == "/bin/zsh" ]
 then
   touch ~/.zshrc
