@@ -65,6 +65,8 @@ echo "node: $(node --version)"
 echo "npm: $(npm --version)"
 echo "xpm: $(xpm --version)"
 
+echo
+
 echo "Done."
 
 # -----------------------------------------------------------------------------
