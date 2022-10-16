@@ -67,6 +67,7 @@ export NVM_DIR="$HOME/.nvm"
 
 nvm install --lts node
 nvm use node
+nvm alias default
 nvm install-latest-npm
 npm install --global xpm@latest
 
